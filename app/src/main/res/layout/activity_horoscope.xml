@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Horoscope"
+    android:orientation="vertical"
+    android:background="@drawable/couple">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90ca7091"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="#78ffffff"
+                android:fontFamily="cursive"
+                android:padding="10dp"
+                android:text="Horoscopes Details"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Enter the Horoscope details below"
+                android:textColor="#f7f7f7"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/etAstroName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#78ffffff"
+                android:fontFamily="serif"
+                android:hint="Astro / ராசி"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/etStar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#78ffffff"
+                android:fontFamily="serif"
+                android:hint="Star / நட்சத்திரம்"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/etcaste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#78ffffff"
+                android:fontFamily="serif"
+                android:hint="Caste / சாதி"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/etSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#78ffffff"
+                android:fontFamily="serif"
+                android:hint="Section / பிரிவு"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <EditText
+                android:id="@+id/etAncestry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#78ffffff"
+                android:fontFamily="serif"
+                android:hint="Ancestry / கோத்திரம்"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="16sp"
+                android:textStyle="italic|bold" />
+
+            <RadioGroup
+                android:id="@+id/rgBlemish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#78ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:padding="10dp"
+                    android:text="Blemish / தோஷம்"
+                    android:textColor="#000000"
+                    android:textColorHint="#0090ff"
+                    android:textSize="16sp"
+                    android:textStyle="italic|bold" />
+
+                <RadioButton
+                    android:id="@+id/rbPure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="சுத்த ஜாதகம்"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:textStyle="italic|bold" />
+
+                <RadioButton
+                    android:id="@+id/rbRaagu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="ராகுக் கேது"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:textStyle="italic|bold" />
+
+                <RadioButton
+                    android:id="@+id/rbSevvai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="செவ்வாய்"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:textStyle="italic|bold" />
+
+                <RadioButton
+                    android:id="@+id/rbRaaguSevvai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="ராகுக் கேது செவ்வாய்"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:textStyle="italic|bold" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="#79000000"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onSubmit"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textStyle="bold|italic" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+</ScrollView>

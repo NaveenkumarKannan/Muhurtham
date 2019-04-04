@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/couple"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#90ca7091">
+<LinearLayout
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="cursive"
+        android:text="Personal Details"
+        android:textSize="30sp"
+        android:layout_marginTop="5dp"
+        android:background="#78ffffff"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Enter the details"
+        android:textColor="#f7f7f7"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:hint="Name / பெயர்"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#78ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:background="#78ffffff"
+        android:id="@+id/rgGender"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:text="Gender / பாலினம் :"
+            android:textColor="#000000"
+            android:textColorHint="#0090ff"
+            android:textSize="16sp"
+            android:textStyle="italic|bold" />
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="#ffffff"
+            android:fontFamily="serif"
+            android:textSize="16dp"
+            android:textStyle="italic|bold"/>
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#ffffff"
+            android:fontFamily="serif"
+            android:textSize="16dp"
+            android:textStyle="italic|bold"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tvDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:layout_marginTop="5dp"
+        android:hint="DOB / பிறந்த தேதி"
+        android:background="#78ffffff"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+
+    <TextView
+        android:id="@+id/tvTimeOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:hint="Time of birth / பிறந்த நேரம்"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#78ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+<!--
+    <EditText
+        android:id="@+id/etDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:layout_marginTop="5dp"
+        android:hint="DOB / பிறந்த தேதி"
+        android:inputType="date"
+        android:background="#78ffffff"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/etTimeOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:hint="Time of birth / பிறந்த நேரம்"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#78ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+-->
+    <EditText
+        android:id="@+id/etPlaceOfBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:hint="Place of birth / பிறந்த இடம்"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#78ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+    <EditText
+        android:id="@+id/etBusiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:hint="Business / தொழில்"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#78ffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:background="#79000000"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:onClick="nextPage"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

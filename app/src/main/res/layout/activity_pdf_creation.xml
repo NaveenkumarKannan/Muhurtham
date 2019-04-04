@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PdfCreationActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/couple">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#90ca7091">
+
+    <!--
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="openGalleryPhoto"
+            android:text="Upload photo" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="openCameraPhoto"
+            android:text="Capture Photo" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+    -->
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#78ffffff"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnUpHorImg"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="openGalleryHoroscope"
+            android:text="Upload Horoscope"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            android:background="#79000000"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed"/>
+        <!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            android:background="#79000000"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center"
+            android:onClick="openCameraHoroscope"
+            android:text="Capture Horoscope" />
+        -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/images"
+            android:alpha="0.7"
+            />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnUpHorPdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="getDocument"
+            android:text="Upload Horoscope PDF"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            android:background="#79000000"
+            android:layout_marginTop="5dp"
+
+            android:fontFamily="sans-serif-condensed"/>
+        <Button
+            android:id="@+id/btnGenPdf"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="generatePdf"
+            android:text="Generate PDF"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"
+            android:background="#79000000"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivHoroscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>
